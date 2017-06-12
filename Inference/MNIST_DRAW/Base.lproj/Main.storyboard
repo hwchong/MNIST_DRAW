@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IXx-02-qO6" customClass="Canvas">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="39G-Sh-iHj"/>
+                                    <constraint firstAttribute="width" secondItem="IXx-02-qO6" secondAttribute="height" id="cUT-Nc-5vS"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1U-ui-ZjH">
+                                <rect key="frame" x="162.5" y="492" width="49" height="30"/>
+                                <state key="normal" title="Predict"/>
+                                <connections>
+                                    <action selector="predictButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQT-QK-JKc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6GW-3W-EVl">
+                                <rect key="frame" x="170" y="530" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearCanvas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HIc-lX-sBs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiH-Tg-fzz">
+                                <rect key="frame" x="187" y="173.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Tensorflow Keras Trained CoreML Model for MNIST" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSE-uU-2en">
+                                <rect key="frame" x="24" y="44" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="github.com/hwchong" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whK-v1-9cq">
+                                <rect key="frame" x="0.0" y="626" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="whK-v1-9cq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4iD-xZ-I6E"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="whK-v1-9cq" secondAttribute="bottom" constant="20" id="Ewy-9P-0Ke"/>
+                            <constraint firstItem="IXx-02-qO6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GKo-Yb-33D"/>
+                            <constraint firstItem="IXx-02-qO6" firstAttribute="top" secondItem="aiH-Tg-fzz" secondAttribute="bottom" constant="40" id="R8i-lt-kTB"/>
+                            <constraint firstAttribute="trailing" secondItem="whK-v1-9cq" secondAttribute="trailing" id="RyS-nq-Ib9"/>
+                            <constraint firstItem="6GW-3W-EVl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XpF-eI-eRQ"/>
+                            <constraint firstItem="s1U-ui-ZjH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dQm-fS-5dt"/>
+                            <constraint firstItem="IXx-02-qO6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fVm-6G-zQn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FSE-uU-2en" secondAttribute="trailing" constant="8" id="hKD-Gy-mos"/>
+                            <constraint firstItem="s1U-ui-ZjH" firstAttribute="top" secondItem="IXx-02-qO6" secondAttribute="bottom" constant="38.5" id="jU6-H7-6HX"/>
+                            <constraint firstItem="FSE-uU-2en" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="qHC-Th-Zao"/>
+                            <constraint firstItem="6GW-3W-EVl" firstAttribute="top" secondItem="s1U-ui-ZjH" secondAttribute="bottom" constant="8" id="vGu-W8-wta"/>
+                            <constraint firstItem="aiH-Tg-fzz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xO0-H0-D1A"/>
+                            <constraint firstItem="FSE-uU-2en" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="xcd-L6-jAX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="canvas" destination="IXx-02-qO6" id="czK-Rh-V1p"/>
+                        <outlet property="predictionLabel" destination="aiH-Tg-fzz" id="NvO-nX-j0P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="43.628185907046479"/>
+        </scene>
+    </scenes>
+</document>
