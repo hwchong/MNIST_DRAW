@@ -2,6 +2,10 @@
 
 This is a sample application that demonstrates the end-to-end process of training a custom model for digit recognition (MNIST) from scratch using Keras running on Tensorflow 1.1 as its backend and generating a CoreML model for inference on iOS 11.  
 
+![Demo Gif](http://i.makeagif.com/media/6-12-2017/W16R24.gif)
+
+[YouTube Video](https://www.youtube.com/watch?v=nL6LPTW08LQ)
+
 ### Getting Started
 
 The fastest way to get started is to install [Docker](https://www.docker.com/community-edition) for your machine.
