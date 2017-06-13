@@ -25,8 +25,8 @@
     CGContextRef ctx = UIGraphicsGetCurrentContext();   
     [self.image drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     CGContextSetLineCap(ctx, kCGLineCapRound);
-    CGContextSetLineWidth(ctx, 5.0);
-    CGContextSetRGBStrokeColor(ctx, 0.0, 0.0, 0.0, 1.0);
+    CGContextSetLineWidth(ctx, 580);
+    CGContextSetRGBStrokeColor(ctx, 1.0, 1.0, 1.0, 1.0);
     CGContextBeginPath(ctx);
     CGContextMoveToPoint(ctx, location.x, location.y);
     CGContextAddLineToPoint(ctx, currentLocation.x, currentLocation.y);
@@ -45,8 +45,8 @@
     CGContextRef ctx = UIGraphicsGetCurrentContext();   
     [self.image drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     CGContextSetLineCap(ctx, kCGLineCapRound);
-    CGContextSetLineWidth(ctx, 5.0);
-    CGContextSetRGBStrokeColor(ctx, 0.0, 0.0, 0.0, 1.0);
+    CGContextSetLineWidth(ctx, 8.0);
+    CGContextSetRGBStrokeColor(ctx, 1.0, 1.0, 1.0, 1.0);
     CGContextBeginPath(ctx);
     CGContextMoveToPoint(ctx, location.x, location.y);
     CGContextAddLineToPoint(ctx, currentLocation.x, currentLocation.y);

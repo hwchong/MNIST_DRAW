@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224A60C71EEFA6720095AC03 /* mnist_cnn_keras.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 224A60C61EEFA6720095AC03 /* mnist_cnn_keras.mlmodel */; };
+		224A60C81EEFA6CF0095AC03 /* Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 224A60C11EEFA5C00095AC03 /* Canvas.m */; };
+		224A60C91EEFA6EB0095AC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224E7C401EE9C6110095AC03 /* Main.storyboard */; };
+		224A60CA1EEFA6EE0095AC03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224E7C451EE9C6110095AC03 /* LaunchScreen.storyboard */; };
 		224E7C3C1EE9C6110095AC03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E7C3B1EE9C6110095AC03 /* AppDelegate.m */; };
 		224E7C3F1EE9C6110095AC03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E7C3E1EE9C6110095AC03 /* ViewController.m */; };
-		224E7C421EE9C6110095AC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224E7C401EE9C6110095AC03 /* Main.storyboard */; };
 		224E7C441EE9C6110095AC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224E7C431EE9C6110095AC03 /* Assets.xcassets */; };
-		224E7C471EE9C6110095AC03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224E7C451EE9C6110095AC03 /* LaunchScreen.storyboard */; };
 		224E7C4A1EE9C6110095AC03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E7C491EE9C6110095AC03 /* main.m */; };
-		224E7C521EE9C6200095AC03 /* Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E7C511EE9C61F0095AC03 /* Canvas.m */; };
-		224E7C621EEB14D30095AC03 /* mnist_cnn_keras.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 224E7C611EEB14D30095AC03 /* mnist_cnn_keras.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		224A60C11EEFA5C00095AC03 /* Canvas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Canvas.m; sourceTree = "<group>"; };
+		224A60C21EEFA5C00095AC03 /* Canvas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Canvas.h; sourceTree = "<group>"; };
+		224A60C61EEFA6720095AC03 /* mnist_cnn_keras.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = mnist_cnn_keras.mlmodel; path = ../../Training/models/mnist_cnn_keras.mlmodel; sourceTree = "<group>"; };
 		224E7C371EE9C6110095AC03 /* MNIST_DRAW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MNIST_DRAW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		224E7C3A1EE9C6110095AC03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		224E7C3B1EE9C6110095AC03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,9 +31,6 @@
 		224E7C461EE9C6110095AC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		224E7C481EE9C6110095AC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		224E7C491EE9C6110095AC03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		224E7C501EE9C61F0095AC03 /* Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Canvas.h; path = ../../iPhoneDrawingOnScreen/Drawi/Drawi/Canvas.h; sourceTree = "<group>"; };
-		224E7C511EE9C61F0095AC03 /* Canvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Canvas.m; path = ../../iPhoneDrawingOnScreen/Drawi/Drawi/Canvas.m; sourceTree = "<group>"; };
-		224E7C611EEB14D30095AC03 /* mnist_cnn_keras.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = mnist_cnn_keras.mlmodel; path = ../../../Downloads/notebooks/mnist_cnn_keras.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +63,13 @@
 		224E7C391EE9C6110095AC03 /* MNIST_DRAW */ = {
 			isa = PBXGroup;
 			children = (
-				224E7C611EEB14D30095AC03 /* mnist_cnn_keras.mlmodel */,
+				224A60C61EEFA6720095AC03 /* mnist_cnn_keras.mlmodel */,
+				224A60C21EEFA5C00095AC03 /* Canvas.h */,
+				224A60C11EEFA5C00095AC03 /* Canvas.m */,
 				224E7C3A1EE9C6110095AC03 /* AppDelegate.h */,
 				224E7C3B1EE9C6110095AC03 /* AppDelegate.m */,
 				224E7C3D1EE9C6110095AC03 /* ViewController.h */,
 				224E7C3E1EE9C6110095AC03 /* ViewController.m */,
-				224E7C501EE9C61F0095AC03 /* Canvas.h */,
-				224E7C511EE9C61F0095AC03 /* Canvas.m */,
 				224E7C401EE9C6110095AC03 /* Main.storyboard */,
 				224E7C431EE9C6110095AC03 /* Assets.xcassets */,
 				224E7C451EE9C6110095AC03 /* LaunchScreen.storyboard */,
@@ -136,9 +136,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				224E7C471EE9C6110095AC03 /* LaunchScreen.storyboard in Resources */,
 				224E7C441EE9C6110095AC03 /* Assets.xcassets in Resources */,
-				224E7C421EE9C6110095AC03 /* Main.storyboard in Resources */,
+				224A60C91EEFA6EB0095AC03 /* Main.storyboard in Resources */,
+				224A60CA1EEFA6EE0095AC03 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,11 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224A60C81EEFA6CF0095AC03 /* Canvas.m in Sources */,
 				224E7C3F1EE9C6110095AC03 /* ViewController.m in Sources */,
-				224E7C621EEB14D30095AC03 /* mnist_cnn_keras.mlmodel in Sources */,
+				224A60C71EEFA6720095AC03 /* mnist_cnn_keras.mlmodel in Sources */,
 				224E7C4A1EE9C6110095AC03 /* main.m in Sources */,
 				224E7C3C1EE9C6110095AC03 /* AppDelegate.m in Sources */,
-				224E7C521EE9C6200095AC03 /* Canvas.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
