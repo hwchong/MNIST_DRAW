@@ -25,7 +25,7 @@
     CGContextRef ctx = UIGraphicsGetCurrentContext();   
     [self.image drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     CGContextSetLineCap(ctx, kCGLineCapRound);
-    CGContextSetLineWidth(ctx, 580);
+    CGContextSetLineWidth(ctx, 8.0);
     CGContextSetRGBStrokeColor(ctx, 1.0, 1.0, 1.0, 1.0);
     CGContextBeginPath(ctx);
     CGContextMoveToPoint(ctx, location.x, location.y);
